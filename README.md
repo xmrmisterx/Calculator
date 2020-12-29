@@ -1,6 +1,14 @@
-This is the raw unedited javascript file with all our trials and tribulations while we were doing this project. 
-The numbered points at the end roughly correspond to the assignment bullet points in the calculator project for The Odin Project.
-We like to keep a journal of everything we tried and how we overcame our obstacles, and hopefully somebody else learns something from our experiences.
+This calculator uses elements of HTML, CSS, and Javascript. The Javascript code includes creation of math functions, event listeners for the calculator buttons, and proper calculator logic. Below is an unedited copy of the javascript code with all the comments we made on it. Below that is a copy of the notes taken while creating the calculator.
+
+
+
+
+
+
+
+
+
+// UNEDITED JS CODE...
 
 // we're gonna start with 4 basic functions:add,subtract,multiply, and divide
 
@@ -386,6 +394,10 @@ decimalBtn.addEventListener('click', () => {decimalBtnClick()});
 clearBtn.addEventListener('click', () => {clearData()});
 
 // document.getElementById('addBtn').addEventListener('click', popDisplay('+')); // This quite simply doesn't work, but it seems like it should, and would make the code shorter.
+
+
+
+// NOTES WHILE CREATING THIS...
 
 // 1) Our 'operate' function ran into a couple problems. First off, the 'operator' value wasn't being read by the function when we put it in. We solved this enclosing our 'operator' parameter in quotes when putting in the 'operate' function and its parameters within the inspector console. Secondly, once we matched the operator string with our comparison expression, the function was coming out undefined. After some debugging with console.log, we found that the 'alert' code in our functions was maybe ending the function too early and presumably leaving a value defined. Changing 'alert' to 'console.log' fixed the problem. 
 
